@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx
+    ports:
+      - "8088:88"
+
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
